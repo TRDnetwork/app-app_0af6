@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0F172A;
+    --foreground: #F8FAFC;
+    --card: #1E293B;
+    --card-foreground: #F8FAFC;
+    --popover: #1E293B;
+    --popover-foreground: #F8FAFC;
+    --primary: #F59E0B;
+    --primary-foreground: #F8FAFC;
+    --secondary: #334155;
+    --secondary-foreground: #F8FAFC;
+    --border: #334155;
+    --input: #334155;
+    --ring: #F59E0B;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-text;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
